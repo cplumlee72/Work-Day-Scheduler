@@ -1,28 +1,22 @@
 # 03 JavaScript: Password Generator
 
 ## Description
-This is a rudimentary password generator that, after clicking the generate button, goes through several 
-prompts to ask how long the user wants their password to be, and if the user wants specific sets of 
-characters included in their password. It stores those selections and then runs a function on the data 
-stored to pick a set number of randomized characters based on the length of password set by the user. 
-It then outputs the password to a text field so that it can be copied by the user. 
+This is a simple workday calendar to be able to add and save events throoughout your day! Just follow the instruction below to get organized!  
 
 
 
 ## Usage 
 
-- Open a broswer. Navigate to [https://cplumlee72.github.io/Coding-Quiz/](https://cplumlee72.github.io/Coding-Quiz/)
+- Open a broswer. Navigate to [https://cplumlee72.github.io/Work-Day-Scheduler/](https://cplumlee72.github.io/Work-Day-Scheduler/)
 
-- Click on the start quiz button to begin the quiz. 
+- Click on any time slot where is says "Add Events Here."  
 
-- Answer questions correctly to progress to the next questions. If you answer incorrectly, 5 seconds will be deducted from 
-  your score.
+- Save the event to local storage using the "Save" button. 
 
-- When the last question is answered, you will input your initials and click the submit button to save your score.
+- Time slots in the past will be grey, present will be red, and future will be green. 
 
-- Click the View High Scores button to view your saved score. 
 
-![image of website](./assets/images/04demo.gif/)
+![image of website]()
 
 ## Credits 
 
