@@ -4,6 +4,7 @@ function timeHandler() {
   }, 1000);
 }
 
+
 timeHandler();
 
 var currentHour = moment().format("HH");
@@ -13,7 +14,6 @@ var timeTag = $(".hour");
 
 $.each(timeTag, function () {
   var hourId = $(this).attr("id");
-  console.log($(this).attr("id"));
   if (hourId === currentHour) {
     $(this).next().addClass("present");
   } else if (hourId < currentHour) {
@@ -22,3 +22,13 @@ $.each(timeTag, function () {
     $(this).next().addClass("future");
   }
 });
+
+function saveEvent(event) {
+    var scheduleItem = event.target.parentElement.previousElementSibling.children[0].value
+    console.log(event.target.attributes)
+    // localStorage.setItem("scheduleItem", scheduleItem)
+}
+
+
+
+$(".saveBtn").on("click", saveEvent)
