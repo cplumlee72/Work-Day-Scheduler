@@ -2,16 +2,13 @@ function timeHandler() {
   setInterval(function () {
     $("#currentDay").text(moment().format("MMMM Do YYYY, HH:mm:ss a"));
   }, 1000);
-}
-
-
+};
+// Start the clock when the page loads
 timeHandler();
 
 var currentHour = moment().format("HH");
-console.log(currentHour);
-
 var timeTag = $(".hour");
-
+// checking each hour block against the current hour and changing the colors based on 
 $.each(timeTag, function () {
   var hourId = $(this).attr("id");
   if (hourId === currentHour) {
@@ -22,14 +19,14 @@ $.each(timeTag, function () {
     $(this).next().addClass("future");
   }
 });
-
+// Saving items in the textbox to localstorage
 function saveEvent(event) {
     var scheduleItem = event.target.parentElement.previousElementSibling.children[0].value
     var idName = event.target.attributes.id.value
     console.log(event.target.attributes.id.value)
     localStorage.setItem(idName, scheduleItem)
 }
-
+// on page load, sets value of the textbox to local storage item that matches, if there is information stored in local storage for it. 
 $(document).ready(function () {
   if (localStorage["9btn"] !== null && localStorage["9btn"] !== undefined) {
     $("#9am-text").val(localStorage["9btn"])    
@@ -60,5 +57,5 @@ $(document).ready(function () {
   }
 
 })
-
+// runs the saveEvent function on line 23 when a save button is clicked. 
 $(".saveBtn").on("click", saveEvent)
