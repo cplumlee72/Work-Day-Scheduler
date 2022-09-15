@@ -1,4 +1,4 @@
-# 03 JavaScript: Password Generator
+# 05 Challenge: Workday Scheduler
 
 ## Description
 This is a simple workday calendar to be able to add and save events throoughout your day! Just follow the instruction below to get organized!  
