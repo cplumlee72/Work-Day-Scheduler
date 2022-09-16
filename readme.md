@@ -16,7 +16,7 @@ This is a simple workday calendar to be able to add and save events throoughout 
 - Time slots in the past will be grey, present will be red, and future will be green. 
 
 
-![image of website]()
+![image of website](./assets/images/05Demo.gif)
 
 ## Credits 
 
