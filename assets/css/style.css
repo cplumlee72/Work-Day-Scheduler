@@ -2,6 +2,8 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1;
+  background: linear-gradient(to bottom, #637b93, #fd746c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 textarea {
@@ -9,7 +11,7 @@ textarea {
   border: none;
   resize: none;
   color: #000000;
-  border-left: 1px solid black;
+  
   padding: 10px;
 }
 
@@ -27,24 +29,25 @@ textarea {
 
 .time-block {
   text-align: center;
-  border-radius: 15px;
+  padding-top: 40px;
+  border-radius: 5px 0px 0px 5px
 }
 
 .event-block {
-  font-size: ;
+  border-left: 1px solid black;
 }
 
 .row {
   white-space: pre-wrap;
   height: 80px;
-  border-top: 1px solid white;
+  margin-top: 5px;
   margin-bottom: 25px;
 }
 
 .hour {
-  background-color: #ffffff;
+  background-color: #8fa7bf;
   color: #000000;
-  border-top: 1px dashed #000000;
+  /* border-top: 1px solid #000000; */
 }
 
 .past {
@@ -66,7 +69,7 @@ textarea {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06aed5;
+  background-color: #36201f1c;
   color: white;
 }
 
